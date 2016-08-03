@@ -9,7 +9,7 @@ import hashlib
 m = hashlib.md5()
 #from hcsr04sensor import sensor
 
-passphrase = "oladipo"
+passphrase = "passphrase"
 m.update(passphrase)
 passPhraseHash=str(m.hexdigest())
 m.digest()
@@ -104,9 +104,6 @@ def updateDoorStatus():
 
     garageData['isClosed'] =  isDoorClosedBool
     print('isDoorClosedBool :',isDoorClosedBool)
-    #print('garageData[''isClosed''] :',garageData['isClosed'])
-    #threading.Timer(1,updateDoorStatus).start() #every second.
-    #sleep(3)
 
 def checkForGarageDoorErrors():
     for i in enumerate(garageData['timelineDataTimes'][1:]):
@@ -116,12 +113,6 @@ def checkForGarageDoorErrors():
             garageData['timelineDataTimes'].pop(i+1)
             garageData['timelineDataTimes'].pop(i)
             break
-
-'''
-    if garageData["timelineDataActivity"][0] == garageData["timelineDataActivity"][1]:
-        return err
-'''
-
 
 #Check for Car (Ultrasonic)
 def getCarDistance():
@@ -160,18 +151,9 @@ def isCar():
             return garageData['isCar']
     return currState
     #
-    #
 def updateCarStatus():
-    ''' NOT Sure I NEED THIS
-    if isCar() and not garageData['isCar']: #Meaning the Car just arrived
-        garageData['isCar'] = True
-    elif not isCar() and garageData['isCar']: #Meaning the car just left
-        garageData['isCar'] = False
-    '''
-    #while True:
     garageData['isCar'] = isCar()
-    #threading.Timer(5,updateCarStatus).start() #every second.
-    #sleep(5)
+
 
 #Ultrasonic Workings
 def readUltra(trig,echo):
