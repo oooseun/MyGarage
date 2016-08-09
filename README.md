@@ -1,3 +1,4 @@
+[Pretty version](https://cdn.rawgit.com/oooseun/MyGarage/master/mygarage.html)
 MyGarage DIY
 ==
 
