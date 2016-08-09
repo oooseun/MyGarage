@@ -155,7 +155,7 @@ This is a native ios app i built to work with this system and similar systems wi
 
 
 
-[![](https://raw.githubusercontent.com/oooseun/MyGarage/f5ef525425ac1b84a45d0d11520a42462e8430e5/Assets/Download_on_the_App_Store_Badge.jpg)](https://itunes.apple.com/us/genre/ios/id36?mt=8)
+[![](https://raw.githubusercontent.com/oooseun/MyGarage/f5ef525425ac1b84a45d0d11520a42462e8430e5/Assets/Download_on_the_App_Store_Badge.jpg)](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1140600357&mt=8)
 
 To download this app, visit the App Store
 
