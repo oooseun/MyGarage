@@ -4,7 +4,8 @@ This is some code i wrote to serve a a framework of monitoring and controlling y
 This is specific to the raspberry pi
 
 
-'''import RPi.GPIO as GPIO                     #To be used to access GPIO pins
+'''
+import RPi.GPIO as GPIO                     #To be used to access GPIO pins
 from time import sleep
 from flask import Flask, render_template,request,jsonify  #To make our server
 app=Flask(__name__)
