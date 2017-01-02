@@ -103,6 +103,8 @@ def openClose(): #Basically, turn on the relay for half a second (.01 seconds di
     - Each threshold is unique. You'll have to experiment to see where yours lies. 
     - The passphrase is a security feature to ensure anyone who knows you have open ports in your network can't guess their way into it. A blank passphrase is treated as "". I advise you use this feature even if the passphrase is as short as "a".
     - The passphrase is then converted to md5(). so localhost:6011/togglea is not going to work. Rather localhost:6011/toggle0cc175b9c0f1b6a831c399e269772661
+    
+   **So after a class in networks, i realised a long url can just be defeated by sniffing. will be aiming to include encryption soon* 
 - Final code comments
     - The rest of the code is pretty straight forward and heavily commented. You should take a look at it. 
 
